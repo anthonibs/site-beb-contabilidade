@@ -3,12 +3,13 @@ const BTN_TOPO = document.getElementById("btn-topo");
 const TOGGLE_MENU = document.querySelectorAll('.icon');
 const MENU_MOBILE = document.querySelector('.beb-menu-mobile');
 const OPEN_ANIM_BTN = document.getElementById('menu-anim-btn');
+let anoAtual = document.getElementById('data_atual');
 
 // QUANDO O USUÁRIO ROLAR PARA BAIXO DE 250PX DO TOPO O SITE, MOSTRA O BOTÃO VOLTAR PARA TOPO.
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
         BTN_TOPO.style.display = "block";
     } else {
         BTN_TOPO.style.display = "none";
@@ -30,3 +31,16 @@ for (let m = 0; m < TOGGLE_MENU.length; m++) {
     });
 }
 
+
+function imprimiAnoAtual() {
+   
+    let data = new Date();
+    let ano = data.getFullYear();
+    
+    let dataAtual = ano;
+
+    document.getElementById('data_atual').innerHTML = dataAtual;
+    
+}
+
+imprimiAnoAtual()

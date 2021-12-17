@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/styles/css.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <title>B&B Contabilidade</title>
 </head>
@@ -73,8 +75,8 @@
     <section id="services">
         <div class="services-wrap">
             <div class="services-item">
-                <div class="services-content order-1 beb-text-right">
-                    <h2>Contábil</h2>
+                <div class="services-content order-1 beb-text-right" data-aos="fade-right">
+                    <h2 >Contábil</h2>
                     <p>Desempenha o trabalho pertinente a movimentação contábil da empresa, classifica as despesas,
                         verifica e concilia contas, realiza os registros e escritura os livros fiscais. Elaboração de
                         relatórios financeiros, tais como balanços e demonstrativos financeiros.</p>
@@ -86,7 +88,7 @@
             </div>
 
             <div class="services-item">
-                <div class="services-content order-2">
+                <div class="services-content order-2" data-aos="fade-left">
                     <h2>Tributário</h2>
                     <p>Através do recebimento da escrita fiscal, exerce o controle dos impostos, de âmbito federal,
                         estadual e municipal. Executa a entrega das obrigações assessorias e declarações obrigatórias.
@@ -99,7 +101,7 @@
             </div>
 
             <div class="services-item">
-                <div class="services-content order-1 beb-text-right">
+                <div class="services-content order-1 beb-text-right" data-aos="fade-right">
                     <h2>Departamento Pessoal</h2>
                     <p class="beb-text-right">Responsável pela folha de pagamento, registros, admissões e demissões, o
                         departamento pessoal cuida de todas as obrigações pertinentes ao RH de sua empresa. Garantindo
@@ -112,9 +114,10 @@
             </div>
 
             <div class="services-item">
-                <div class="services-content order-2">
+                <div class="services-content order-2" data-aos="fade-left">
                     <h2>Paralegal</h2>
-                    <p>O setor de Paralegal opera na constituição da empresa, nas alterações contratuais e também no
+                    <p>O setor de Paralegal opera na constituição da empresa, nas alterações
+                        contratuais e também no
                         encerramento da empresa. Realiza também obtenção das certidões federais, estaduais e municipais,
                         além disso, elabora os processos de obtenção dos alvarás obrigatórios para o funcionamento da
                         empresa.</p>
@@ -204,11 +207,18 @@
     </section>
 
     <footer>
-        <p>&copyB&B Contabilidade 2021 - Todos os Direitos Reservados</p>
+        <p>Todos os Direitos Reservados &copyB&B Contabilidade 2021 - <span id="data_atual">2000</span></p>
     </footer>
 
-    <script type="text/javascript" src="assets/js/main.js"></script>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        setTimeout(function () {
+            AOS.init();
+        }, 1000);
+    </script>
 </body>
 
 </html>
